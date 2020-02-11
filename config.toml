@@ -34,10 +34,10 @@ googleAnalytics = ""
     url = "/tags/"
     weight = 2
 
-  [[menu.main]]
-    name = "Categories"
-    url = "/categories/"
-    weight = 3
+  # [[menu.main]]
+  #   name = "Categories"
+  #   url = "/categories/"
+  #   weight = 3
 
   [[menu.main]]
     name = "About"
@@ -45,11 +45,11 @@ googleAnalytics = ""
     weight = 4
 
 [params]
-    since = 2012
+    since = 2020
     author = "@operant"               # Author's name
     subtitle = "Hi, I'm Dave. Follow me on the platforms below, and check out my latest posts."       # Subtitle
-    cdn_url = ""           # Base CDN URL
-    home_mode = "" # post or other
+    cdn_url = "https://master.d2b7bvt8n689h2.amplifyapp.com"           # Base CDN URL
+    home_mode = "post" # post or other
 
     google_verification = ""
     bing_verification = ""
