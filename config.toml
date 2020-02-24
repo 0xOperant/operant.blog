@@ -66,7 +66,7 @@ googleAnalytics = ""
     socialShare = true
 
     description = "...it's a blog about tech." # site description
-    keywords = "" # site keywords
+    keywords = "tech, red team, cyber, infosec, security" # site keywords
 
    # license= 'Released under <a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
 
@@ -138,10 +138,10 @@ Twitter = true
 Facebook = true
 Reddit = true
 Linkedin = true
-#Pinterest = true
+Pinterest = true
 HackerNews = true
 #Mix = true
-#Tumblr = true
+Tumblr = true
 #VKontakte = true
 #Douban = true
 #Weibo = true
