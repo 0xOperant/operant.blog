@@ -3,8 +3,7 @@ title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: true
 description:
-tags:
- -
+tags: ["",""]
 featured_image:
 author: "{{ .Site.Params.author }}"
 ---
