@@ -59,7 +59,7 @@ A word about lighting: this is critical, but it doesn't have to break the bank. 
 
 ## Configuration
 
-There are a number of excellent tutorials and video walk-throughs available already, so I will link to them here. If you have issues or questions, please feel free to contact me using one of the [social platforms listed on the home page](../../index.html)!
+There are a number of excellent tutorials and video walk-throughs available already, so I will link to them here. If you have issues or questions, please feel free to contact me using one of the [social platforms listed on the home page](../../index.html), preferably [twitter](https://twitter.com/operant)!
 
 Wirecast:
 
