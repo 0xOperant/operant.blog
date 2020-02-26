@@ -1,8 +1,12 @@
 baseURL = "https://techblog.operant.io"
 languageCode = "en"
 defaultContentLanguage = "en"
-title = "techblog.operant.io"
 theme = "KeepIt"
+
+[Languages]
+  [Languages.en]
+    title = "techblog.operant.io"
+    weight = 0
 
 paginate = 12
 enableEmoji = true
@@ -150,10 +154,10 @@ Tumblr = true
 copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
 
 [author]
-  name = "Fastbyte01"
+  name = "@operant"
 
   [params.publisher]
-    name = "Fastbyte01"
+    name = "@operant"
 
     [params.publisher.logo]
       url = "logo.png"
