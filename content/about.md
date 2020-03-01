@@ -5,7 +5,7 @@ draft: false
 description: "About me, and about this site"
 ---
 
-![Dave Bell (@operant)](/images/me/avatar.png)
+{{< figure src="/images/me/avatar.png" title="Dave Bell (@operant)" >}}
 
 ## A little about myself
 

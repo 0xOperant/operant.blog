@@ -15,6 +15,9 @@ other = "with"
 [on]
 other = "on"
 
+[read]
+other = "read"
+
 [in]
 other = "in"
 
