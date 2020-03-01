@@ -4,6 +4,9 @@ date: 2020-01-29T22:24:59-05:00
 draft: false
 description: "About me, and about this site"
 ---
+
+![Dave Bell (@operant)](/images/me/avatar.png)
+
 ## A little about myself
 
 Hello, I'm Dave. From my LinkedIn bio: I am a proven Red Team leader with extensive experience managing, leading, planning and executing Red Team operations in multiple industries and disciplines across the globe. I have broad experience in both the Public and Private sectors and have been recognized for my expertise in numerous ways--most recently by being featured in the "Tribe of Hackers: Red Team Edition" book published by Wiley.
