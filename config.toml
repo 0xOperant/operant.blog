@@ -10,6 +10,7 @@ theme = "KeepIt"
 
 paginate = 12
 enableEmoji = true
+enableGitInfo = true
 enableRobotsTXT = true
 googleAnalytics = "UA-73276509-2"
 # disqusShortname = "yourdiscussshortname"
