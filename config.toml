@@ -60,6 +60,7 @@ googleAnalytics = "UA-73276509-2"
     subtitle = "Hi, I'm Dave. Follow me on the platforms below, and check out my latest posts."       # Subtitle
     cdn_url = "https://master.d2b7bvt8n689h2.amplifyapp.com"           # Base CDN URL
     home_mode = "" # post or other
+    git_url = "https://github.com/0xOperant/techblog.operant.io"
 
     google_verification = ""
     bing_verification = ""
