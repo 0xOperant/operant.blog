@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/belldavidr
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://techblog.operant.io
+  * I am belldavidr (https://keybase.io/belldavidr) on keybase.
+  * I have a public key ASACUGb2kgcKbgtD92wngybeirgpVV5MQKKg2o_3GYwNgQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120c37c45e71d4532a61c643dd820f0675960be9abe111b189b545b74b672d8c4930a",
+      "host": "keybase.io",
+      "kid": "0120025066f692070a6e0b43f76c278326de8ab829555e4c40a2a0da8ff7198c0d810a",
+      "uid": "56b9fa99a860870cbbacf99a3f68ac19",
+      "username": "belldavidr"
+    },
+    "merkle_root": {
+      "ctime": 1583120411,
+      "hash": "dfe68984fbc107d7e922cb34226f91d657998c36b8df503b2b0e39ea136583bdda4cf2d37793441d2c9a7378aafe7def39e00e3a0d8a1d045c7d77060e2c63b3",
+      "hash_meta": "b9731cba57703056c6d48acae9c8fbee6eb4ee6387dcce46eafaf613228ef6bd",
+      "seqno": 14890061
+    },
+    "service": {
+      "entropy": "FgslSYf+fkUPIZM5UB8EhmTj",
+      "hostname": "techblog.operant.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.2.0"
+  },
+  "ctime": 1583120449,
+  "expire_in": 504576000,
+  "prev": "22de9a8a9c343b7a7f339a40bc5e6d8398394048f9274d2fd94fe92f6e98a8cd",
+  "seqno": 125,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgAlBm9pIHCm4LQ/dsJ4Mm3oq4KVVeTECioNqP9xmMDYEKp3BheWxvYWTESpcCfcQgIt6aipw0O3p/M5pAvF5tg5g5QEj5J00v2U/pL26YqM3EIDMa+naHnC3M2OTy2uDwzKTvnvSFI9Bws2EusruzvWwBAgHCo3NpZ8RAZ+kbq3CJO2FjnJYw24ZmIJLMNY+lJJ6HeZfAICWul1gh0K12JTpbb6qy0ba7pHlclvuuaTaj/MSYvMDfwrdVDqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIOAKCKv8UnMzHiTlNKMkZaoA5LHngFgBsraV8SAotVePo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/belldavidr
+
+==================================================================
