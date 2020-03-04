@@ -12,7 +12,6 @@ paginate = 12
 enableEmoji = true
 enableGitInfo = true
 enableRobotsTXT = true
-googleAnalytics = "HUGO_GOOGLEANALYTICS"
 # disqusShortname = "yourdiscussshortname"
 
 [sitemap]
