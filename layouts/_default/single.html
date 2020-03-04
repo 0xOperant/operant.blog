@@ -8,8 +8,6 @@
                 <span class="post-time">
                     {{ i18n "on" }} <time datetime={{.Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }} >{{ .Date.Format (.Site.Params.dateFormatToUse | default "2 January 2006") }}</time>
                 </span>
-                | {{ i18n "read" }}
-                {{ i18n "in" }}
                 {{ with .Params.categories -}}
                 <i class="iconfont icon-folder"></i>
                 <span class="post-category">
@@ -21,8 +19,8 @@
                         {{ end }}
                 </span>
                 {{- end }}
-                <i class="iconfont icon-timer"></i>
-                {{.ReadingTime }} min |
+                | <i class="iconfont icon-timer"></i>
+                {{.ReadingTime }} min {{ i18n "read" }} |
                 {{ if and ( $.Param "socialShare" ) (gt (len ($.Param "share")) 0) }}
                 <span>{{ i18n "Share" }}:</span>
                 <span>{{ partial "share-links.html" . }}</span>
