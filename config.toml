@@ -43,10 +43,10 @@ enableRobotsTXT = true
   #  url = "/categories/"
   #  weight = 3
 
-  #[[menu.main]]
-  #  name = "Projects"
-  #  url = "/projects/"
-  #  weight = 4
+  [[menu.main]]
+    name = "Tribe of Hackers"
+    url = "/toh"
+    weight = 4
 
   [[menu.main]]
     name = "About"
