@@ -10,11 +10,11 @@ author: "@operant"
 
 {{< figure src="/images/ToH.jpg" width="auto" >}}
 
- Last year I had the honor of being asked to contribute to the "Tribe of Hackers Red Team: Tribal Knowledge from the Best in Offensive Cybersecurity" book by Marcus J. Carey and Jennifer Jin. They were passed my contact info by my colleagues leading other large internal corporate Red Teams, and I'll admit I was blown away. They were on a tight deadline at the time, and wanted my input quickly. I was overseas at a conference, and literally tapped this out on my tablet on the flight home. With the magic of editing, I think it turned out ok. I've included my input below. Let me know what you think!
+Last year I had the honor of being asked to contribute to the "Tribe of Hackers Red Team: Tribal Knowledge from the Best in Offensive Cybersecurity" book by Marcus J. Carey and Jennifer Jin. They were passed my contact info by my colleagues leading other large internal corporate Red Teams, and I'll admit I was blown away. They were on a tight deadline at the time, and wanted my input quickly. I was overseas at a conference, and literally tapped this out on my tablet on the flight home. With the magic of editing, I think it turned out ok. I've included my input below. Let me know what you think!
 
- > There's no "right way" to become a Red Team member.
- 
- ## Questions
+> There's no "right way" to become a Red Team member.
+
+## Questions
 
 1. How did you get your start on a red team?
 
