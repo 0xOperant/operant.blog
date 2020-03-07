@@ -34,12 +34,12 @@ googleAnalytics = "UA-73276509-3"
     url = "/posts/"
     weight = 1
 
-[[menu.main]]
+  [[menu.main]]
     name = "About"
     url = "/about"
     weight = 2
 
-[[menu.main]]
+  [[menu.main]]
     name = "Tribe of Hackers"
     url = "/toh"
     weight = 3
