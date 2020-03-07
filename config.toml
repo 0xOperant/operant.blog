@@ -34,25 +34,25 @@ googleAnalytics = "UA-73276509-3"
     url = "/posts/"
     weight = 1
 
+[[menu.main]]
+    name = "About"
+    url = "/about"
+    weight = 2
+
+[[menu.main]]
+    name = "Tribe of Hackers"
+    url = "/toh"
+    weight = 3
+
   [[menu.main]]
     name = "Tags"
     url = "/tags/"
-    weight = 2
+    weight = 4
 
   #[[menu.main]]
   #  name = "Categories"
   #  url = "/categories/"
   #  weight = 3
-
-  [[menu.main]]
-    name = "Tribe of Hackers"
-    url = "/toh"
-    weight = 4
-
-  [[menu.main]]
-    name = "About"
-    url = "/about"
-    weight = 5
 
 [params]
     since = 2020
