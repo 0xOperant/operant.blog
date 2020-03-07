@@ -3,6 +3,9 @@ title: "About"
 date: 2020-01-29T22:24:59-05:00
 draft: false
 description: "About me, and about this site"
+tags: ["about"]
+type: "list"
+author: "@operant"
 ---
 
 {{< figure src="/images/me/avatar.png" title="Dave Bell (@operant)" >}}
