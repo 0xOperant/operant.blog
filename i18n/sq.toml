@@ -15,6 +15,9 @@ other = "me"
 [on]
 other = "në"
 
+[read]
+other = "lexoj"
+
 [in]
 other = "në"
 

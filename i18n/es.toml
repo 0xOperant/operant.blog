@@ -15,6 +15,9 @@ other = "con"
 [on]
 other = "en"
 
+[read]
+other = "leer"
+
 [in]
 other = "en"
 

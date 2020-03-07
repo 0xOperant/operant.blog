@@ -15,6 +15,9 @@ other = "con"
 [on]
 other = "il"
 
+[read]
+other = "leggere"
+
 [in]
 other = "in"
 

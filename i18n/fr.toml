@@ -15,6 +15,9 @@ other = "avec"
 [on]
 other = "sur"
 
+[read]
+other = "lis"
+
 [in]
 other = "dans"
 

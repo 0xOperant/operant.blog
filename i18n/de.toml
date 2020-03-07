@@ -15,6 +15,9 @@ other = "mit"
 [on]
 other = "auf"
 
+[read]
+other = "lessen"
+
 [in]
 other = "im"
 
