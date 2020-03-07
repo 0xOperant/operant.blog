@@ -46,7 +46,7 @@ googleAnalytics = "UA-73276509-3"
 
   [[menu.main]]
     name = "Tribe of Hackers"
-    url = "projects/toh"
+    url = "/toh"
     weight = 4
 
   [[menu.main]]
