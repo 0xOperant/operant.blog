@@ -11,7 +11,7 @@ author: "@operant"
 
 A couple of days after [posting my experiences working remotely](../so-youre-going-to-work-remotely), I saw a [tweet from @jack_daniel](https://twitter.com/jack_daniel/status/1236471941692887041) that made an excellent point:
 
-{{< tweet 1236471941692887041 >}}
+{{< twitter 1236471941692887041 >}}
 
 As it turns out, I have also been managing remotely over the last four years, and have learned some things along the way. Not only do _I_ work remotely, but my team is spread across three continents: North America, Europe, and Australia. Some team members do spend time in local offices, while others work remotely full-time. This mixture essentially means we treat everyone as remote, and have a standard way of doing things so everyone knows what to expect. The end result is true location independence: any one of us can be working from home, on the road, or in an office, and nobody skips a beat (and might not even notice)!
 

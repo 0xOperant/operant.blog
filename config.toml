@@ -79,6 +79,12 @@ googleAnalytics = "UA-73276509-3"
 [params.gravatar]
     #email = "example@gmail.com"   #uncomment and insert your email address to use gravatar
 
+[params.twitter]
+  card = "summary"
+  site = "@operant"
+  title = "techblog.operant.io"
+  image = "https://techblog.operant.io/images/me/avatar.png"
+
 
 [params.social]
     GitHub = "0xOperant"
@@ -116,7 +122,7 @@ googleAnalytics = "UA-73276509-3"
     #Goodreads = "xxxx"
     #Lastfm = "xxxx"
     #Foursquare = "xxxx"
-    #Hackernews = "xxxx"
+    #Hackernews = "0xOperant"
     #Kickstarter = "xxxx"
     #Patreon = "xxxx"
     #Steam = "xxxx"
