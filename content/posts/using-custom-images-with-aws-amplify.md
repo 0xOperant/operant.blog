@@ -1,10 +1,10 @@
 ---
-title: "Using Custom Images With Aws Amplify"
+title: "Using Custom Images With AWS Amplify"
 date: 2020-03-10T21:06:58-04:00
-draft: true
+draft: false
 description: "don't use the bloated default image!"
-tags: ["docker","aws","amplify"]
-featured_image:
+tags: ["hugo","docker","aws","amplify","iam","ecr"]
+featured_image: "/images/hugo-docker-aws.png"
 author: "@operant"
 ---
 ## Bloated Whale
@@ -155,7 +155,7 @@ ENTRYPOINT [ "bash", "-c" ]
 
 ## Which Diet
 
-Ok, so we need to slim down the Dockerfile. When I think "small", I think Alpine. So I quickly pulled together an alpine dockerfile with the bare essentials:
+Ok, so we need to slim down the Dockerfile. When I think "small", I think Alpine. So I quickly pulled together an alpine dockerfile with the bare essentials. Note that my theme requires Hugo_Extended; you may not need this version.
 
 Working Alpine + Hugo Dockerfile:
 
@@ -177,9 +177,9 @@ EXPOSE 1313
 ENTRYPOINT [ "sh", "-c" ]
 ```
 
-This worked great, locally. I cloned my site, launched hugo, and everything looked good. So I quickly set about pushing the image to AWS Elastic Container Repository (ECR), because I'm already using Amplify anyway. So I followed the instructions, pushed the container image to ECR, and triggered a new build...which promptly failed. Amplify didn't have permissions to pull from ECR. I was tired, and didn't want to deal with IAM, so I just pushed the image to Docker Hub instead (which Amplify supports). At this point I pointed Amplify at the docker registry, and triggered another build. But, nothing happened. The Amplify documentation specifically says to use the normal `docker pull` syntax, and gives an example of `docker pull image:tag`. Only that doesn't work. You have to omit the tag for Amplify to "find" the image. After solving that mystery, I triggered yet another build. This one provisioned successfully! But the build silently failed. No logs, no alerts; nothing but a red `X`. I tweaked various settings, tried adding the AWS CLI, etc., until I found [this post](https://github.com/aws-amplify/amplify-console/issues/100#issuecomment-528598420) stating Alpine isn't supported by Amplify. Awesome.
+This worked great, locally. I cloned my site, launched hugo, and everything looked good. So I quickly set about pushing the image to AWS Elastic Container Repository (ECR), because I'm already using Amplify anyway. So I followed the instructions, pushed the container image to ECR, and triggered a new build...which promptly failed. Amplify didn't have permissions to pull from ECR. I was tired, and didn't want to deal with IAM, so I just pushed the image to Docker Hub instead (which Amplify supports). At this point I pointed Amplify at the docker registry, and triggered another build. But, nothing happened. The Amplify documentation specifically says to use the normal `docker pull` syntax, and gives an example of `docker pull image:tag`. Only that doesn't work. You have to omit the tag for Amplify to "find" the image. After solving that mystery, I triggered yet another build. This one provisioned successfully! But the build silently failed. No logs, no alerts; nothing but a red `X`. I tweaked various settings, tried adding the AWS CLI, etc., until I found [this post](https://github.com/aws-amplify/amplify-console/issues/100#issuecomment-528598420) stating Alpine isn't supported by Amplify. Awesome. {{< emoji ":unamused:" >}}
 
-I was tempted to try ubuntu next. I'm familiar with it, and can get the image pretty small. However, I didn't feel like playing "whack a mole" anymore, especially with such sparse and often incorrect documentation on Amazon's part. Nope, instead I just cut out the important bits from their default dockerfile, and stuck with Amazon Linux 2. I'm pretty sure they'll support that! :P Here's what I ended up with after trimming the blubber:
+I was tempted to try ubuntu next. I'm familiar with it, and can get the image pretty small. However, I didn't feel like playing "whack a mole" anymore, especially with such sparse and often incorrect documentation on Amazon's part. No, instead I just cut out the important bits from their default dockerfile, and stuck with Amazon Linux 2. I'm pretty sure they'll support that! {{< emoji ":stuck_out_tongue:" >}} Here's what I ended up with after trimming the blubber. This works locally, and on AWS. Once again, I'm using the extended version for my theme. Amplify will ignore the `EXPOSE` command, so I just left it in there for when I want to pull the image for local testing.
 
 Slimmed-down version of the default dockerfile:
 
@@ -212,12 +212,46 @@ EXPOSE 1313
 ENTRYPOINT [ "bash", "-c" ]
 ```
 
-We went from 137 lines down to 26. It could be shorter if I didn't care about readability. I built the image locally, cloned my site, and launched hugo. It worked like a charm, and now my locally generated page matched the live page. Cool! Now to push the image.
+We went from 137 lines down to 26, and it could definitely be shorter if I didn't care about readability. I built the image locally, attached to the shell, cloned my site from github, and then launched hugo. It worked like a charm, and now my locally generated page matched the live page. Cool! Now the only thing I need to do was to push the image. Right?
 
-At this point I planned to continue to use docker hub, still not wanting to mess with IAM permissions. I pointed docker hub at the github repo for the dockerfile, then set up a webhook to trigger Amplify to redeploy whenever a new image is built on docker hub. Then, triggered the build pipeline by pushing to github. And waited. And...waited some more. Docker Hub seems really slow to me. However, it eventually did it's thing, and dutifully notified Amplify that it had work to do. Amplify dove on that grenade immediately, and deployed a fresh version of my site in no time at all. Sweet! But I had been spoiled. Docker hub was just too slow, and I didn't want to wait for it while I was tweaking content or cosmetics. I knew I would get frustrated with that quickly. What to do?
+At this point I planned to continue to use docker hub, as I still did not want to mess with IAM permissions. I pointed docker hub at the github repo for the dockerfile, then set up a webhook to trigger Amplify to redeploy whenever a new image was built on docker hub. Then, I triggered the build pipeline by pushing the dockerfile to github. And waited. And...waited some more. Docker Hub seems really slow to me. However, it eventually did it's thing, and dutifully notified Amplify that it had work to do. Amplify dove on that grenade immediately, and deployed a fresh version of my site in no time at all. I brought up a browser to double check, and everything looked good. Sweet! But I had been spoiled. Docker hub was just too slow, and I didn't want to wait for it while I was tweaking content or cosmetics. I knew I would get frustrated with that quickly. What to do?
 
-I could just build the image locally, and then push it...but that kind of sucks too. I've been spoiled by triggering things by pushing git commits. Ok, let's look at this IAM thing. If I can figure this out, I might be able to have my cake, and eat it too.
+I could have just built the image locally, and then pushed it...but that option kind of sucked too. I'd been spoiled by triggering things by pushing git commits. I knew that ECR would be much faster, and it made sense to keep the dockerfile on the same service. So, I found myself fighting with IAM.
 
-## Results
+Amplify needed read access to ECR image repository in order to be able to pull the image and start the build. In order to provide that access, I first created an IAM role for the Amplify service to assume, and then created a read-only policy document in the ECR console and assigned it to the role:
 
-## Tips
+```json
+{
+  "Version": "2008-10-17",
+  "Statement": [
+    {
+      "Sid": "AmplifyReadHugo",
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "arn:aws:iam::<accountID>:role/AmplifyAssumeRole",
+        "Service": "amplify.amazonaws.com"
+      },
+      "Action": [
+        "ecr:BatchCheckLayerAvailability",
+        "ecr:BatchGetImage",
+        "ecr:DescribeImageScanFindings",
+        "ecr:DescribeImages",
+        "ecr:DescribeRepositories",
+        "ecr:GetAuthorizationToken",
+        "ecr:GetDownloadUrlForLayer",
+        "ecr:GetLifecyclePolicy",
+        "ecr:GetLifecyclePolicyPreview",
+        "ecr:GetRepositoryPolicy",
+        "ecr:ListImages",
+        "ecr:ListTagsForResource"
+      ]
+    }
+  ]
+}
+```
+
+Once that was done, I headed back to the Amplify console, clicked "Redeploy this Version", and watched the magic happen.
+
+## fin
+
+I'm pretty happy with the results. The new dockerfile is tiny compared to the default, and I've removed a ton of useless code from the image, thereby reducing possible risk. Amplify was already pretty snappy, but this does seem to be a bit faster, which is nice. The dockerfile is available on my [github](https://github.com/0xOperant/hugo-amazon-docker/blob/master/Dockerfile), if you'd like to try it. The image is also on [Docker Hub](https://hub.docker.com/r/operant/hugo) (`docker pull operant/hugo`), if you're into running other people's containers. It works locally, too...you don't need to run it on AWS. [Let me know](https://twitter.com/operant) how it works for you!
