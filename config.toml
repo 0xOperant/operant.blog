@@ -199,9 +199,10 @@ clientSecret = "" # Your client secret
   placeholder = 'your comments ...'
   visitor = true
 
-[params.utterances]       # https://utteranc.es/
-    owner = ""              # Your GitHub ID
-    repo = ""               # The repo to store comments
+[params.utterances]                  # https://utteranc.es/
+    owner = "0xOperant"              # Your GitHub ID
+    repo  = "techblog.operant.io"    # The repo to store comments
+    theme = "github-light"
 
 [params.gitment]          # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment
     owner = ""              # Your GitHub ID
