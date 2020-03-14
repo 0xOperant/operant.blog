@@ -13,7 +13,6 @@ enableEmoji = true
 enableGitInfo = true
 enableRobotsTXT = true
 googleAnalytics = "UA-73276509-3"
-# disqusShortname = "yourdiscussshortname"
 
 [sitemap]
   changefreq = "monthly"
@@ -49,11 +48,6 @@ googleAnalytics = "UA-73276509-3"
     url = "/tags/"
     weight = 4
 
-  #[[menu.main]]
-  #  name = "Categories"
-  #  url = "/categories/"
-  #  weight = 3
-
 [params]
     since = 2020
     author = "@operant"               # Author's name
@@ -76,15 +70,33 @@ googleAnalytics = "UA-73276509-3"
 
    # license= 'Released under <a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
 
-[params.gravatar]
-    #email = "example@gmail.com"   #uncomment and insert your email address to use gravatar
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    anonymizeIP = false
+    disable = false
+    respectDoNotTrack = true
+    useSessionStorage = true
+  [privacy.instagram]
+    disable = false
+    simple = true
+  [privacy.twitter]
+    disable = false
+    enableDNT = true
+    simple = false
+  [privacy.vimeo]
+    disable = false
+    simple = false
+  [privacy.youtube]
+    disable = false
+    privacyEnhanced = true
 
 [params.twitter]
   card = "summary"
   site = "@operant"
   title = "techblog.operant.io"
   image = "https://techblog.operant.io/images/me/avatar.png"
-
 
 [params.social]
     GitHub = "0xOperant"
@@ -182,30 +194,7 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
     width = 800
     height = 600
 
-[params.gitalk]
-owner = ""       # Your GitHub ID
-repo = ""        # The repo to store comments
-clientId = ""    # Your client ID
-clientSecret = "" # Your client secret
-
-[params.valine]
-  enable = false
-  language = 'en'
-  appId = 'your appId'
-  appKey = 'your appKey'
-  notify = false  # mail notifier , https://github.com/xCss/Valine/wiki
-  verify = false # Verification code
-  avatar = 'mm'
-  placeholder = 'your comments ...'
-  visitor = true
-
 [params.utterances]                  # https://utteranc.es/
     owner = "0xOperant"              # Your GitHub ID
     repo  = "techblog.operant.io"    # The repo to store comments
     theme = "github-light"
-
-[params.gitment]          # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment
-    owner = ""              # Your GitHub ID
-    repo = ""               # The repo to store comments
-    clientId = ""           # Your client ID
-    clientSecret = ""       # Your client secret
