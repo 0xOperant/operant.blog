@@ -19,10 +19,16 @@ googleAnalytics = "UA-73276509-3"
   filename = "sitemap.xml"
   priority = 0.5
 
-[blackfriday]
-  hrefTargetBlank = true
-  nofollowLinks = true
-  noreferrerLinks = true
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.blackfriday]
+    hrefTargetBlank = true
+    nofollowLinks = true
+    noreferrerLinks = true
+  [markup.goldmark.parser]
+    attribute = true
+    autoHeadingID = true
+    autoHeadingIDType = "github"
 
 [Permalinks]
  posts = "/:year/:filename/"
