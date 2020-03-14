@@ -1,9 +1,15 @@
-{{ $related := .Site.RegularPages.Related . | first 5 }}
-{{ with $related }}
-<h3>{{ i18n "Similar" }} {{ i18n "articles" }}:</h3>
-<ul>
-	{{ range . }}
-	<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-	{{ end }}
+{{ $.Scratch.Set "limit" 0 }}
+{{ $currentPagePermalink := .Permalink }}
+{{ $tags := .Params.tags }}
+<br>
+<h3>{{ i18n "Related" }} {{ i18n "Articles" }}:</h3>
+{{ range .Site.Pages }}
+  {{ $isMatchTags := intersect $tags .Params.tags | len | lt 0 }}
+  {{ if and $isMatchTags (ne .Permalink $currentPagePermalink) (lt ($.Scratch.Get "limit") 5) }}
+  <ul>
+    - <a href="{{ .Permalink }}">{{ .Title }}</a>
+    {{ $.Scratch.Add "limit" 1 }}
+  {{ end }}
 </ul>
 {{ end }}
+<br>

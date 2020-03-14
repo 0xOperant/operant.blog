@@ -107,6 +107,10 @@
         </section>
     </div>
 
+    <div>
+        {{ partial "related.html" . }}
+    </div>
+
     <div class="post-nav">
         {{ if .PrevInSection }}
         <a href="{{.PrevInSection.Permalink}}" class="prev" rel="prev" title="{{ .PrevInSection.Title}}"><i class="iconfont icon-dajiantou"></i>&nbsp;{{ .PrevInSection.Title}}</a>
