@@ -71,7 +71,7 @@ googleAnalytics = "UA-73276509-3"
     avatar = "/images/me/avatar.png" #comment it to use gravatar
     socialShare = true
 
-    description = "...it's a blog about tech." # site description
+    description = "Sharing my experiences as a Red Team leader" # site description
     keywords = "tech, red team, cyber, infosec, security" # site keywords
 
    # license= 'Released under <a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
@@ -122,7 +122,7 @@ googleAnalytics = "UA-73276509-3"
     #Goodreads = "xxxx"
     #Lastfm = "xxxx"
     #Foursquare = "xxxx"
-    #Hackernews = "0xOperant"
+    Hackernews = "0xoperant"
     #Kickstarter = "xxxx"
     #Patreon = "xxxx"
     #Steam = "xxxx"
