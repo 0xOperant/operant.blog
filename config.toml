@@ -68,7 +68,7 @@ googleAnalytics = "UA-73276509-3"
     pinterest_verification = ""
     baidu_verification = ""
 
-    avatar = "https://techblog.operant.io/images/me/avatar.png" #comment it to use gravatar
+    avatar = "/images/me/avatar.png" #comment it to use gravatar
     socialShare = true
 
     description = "Sharing my experiences as a Red Team leader" # site description
