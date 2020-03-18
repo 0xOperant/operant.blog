@@ -68,11 +68,12 @@ googleAnalytics = "UA-73276509-3"
     pinterest_verification = ""
     baidu_verification = ""
 
-    avatar = "/images/me/avatar.png" #comment it to use gravatar
+    avatar = "https://techblog.operant.io/images/me/avatar.png" #comment it to use gravatar
     socialShare = true
 
     description = "Sharing my experiences as a Red Team leader" # site description
     keywords = "tech, red team, cyber, infosec, security" # site keywords
+    images = ["https://techblog.operant.io/cover.png"]
 
     license= 'Licensed under <a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>, except where marked (with &copy;). Some rights reserved.'
 
@@ -99,10 +100,10 @@ googleAnalytics = "UA-73276509-3"
     privacyEnhanced = true
 
 [params.twitter]
-  card = "summary"
+  card = "summary_large_image"
   site = "@operant"
   title = "techblog.operant.io"
-  image = "https://techblog.operant.io/images/me/avatar.png"
+  image = "https://techblog.operant.io/cover.png"
 
 [params.social]
     GitHub = "0xOperant"
