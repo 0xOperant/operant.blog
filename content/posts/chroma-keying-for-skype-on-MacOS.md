@@ -7,6 +7,7 @@ tags: ["skype","streaming","how-to","chroma key","MacOS","green screen","wirecas
 featured_image: "/images/greenscreen.jpeg"
 author: "@operant"
 ---
+{{< copyright >}}
 
 ## Chroma what?
 

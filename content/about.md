@@ -8,6 +8,7 @@ author: "@operant"
 ---
 
 {{< figure src="/images/me/avatar.png" title="Dave Bell (@operant)" >}}
+{{< copyright >}}
 
 {{< twitter_simple 1131923277507637250 >}}
 
