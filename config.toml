@@ -73,7 +73,7 @@ googleAnalytics = "UA-73276509-3"
 
     description = "Sharing my experiences as a Red Team leader" # site description
     keywords = "tech, red team, cyber, infosec, security" # site keywords
-    images = ["https://techblog.operant.io/cover.png"]
+    images = ["https://master.d2b7bvt8n689h2.amplifyapp.com/cover.png"]
 
     license= 'Licensed under <a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>, except where marked (with &copy;). Some rights reserved.'
 
@@ -103,7 +103,7 @@ googleAnalytics = "UA-73276509-3"
   card = "summary_large_image"
   site = "@operant"
   title = "techblog.operant.io"
-  image = "https://techblog.operant.io/cover.png"
+  image = "https://master.d2b7bvt8n689h2.amplifyapp.com/cover.png"
 
 [params.social]
     GitHub = "0xOperant"
