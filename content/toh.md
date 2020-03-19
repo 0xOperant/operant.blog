@@ -4,7 +4,8 @@ date: 2020-03-05T21:13:39-05:00
 draft: false
 description: "Sharing my \"Tribe of Hackers Red Team: Tribal Knowledge from the Best in Offensive Cybersecurity\" book input"
 tags: ["tribe of hackers","red team","book","writing"]
-featured_image: "/images/ToH.jpg"
+featured_image: 
+images: ["/images/ToH.jpg"]
 type: "single"
 author: "@operant"
 ---
