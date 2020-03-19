@@ -99,12 +99,6 @@ googleAnalytics = "UA-73276509-3"
     disable = false
     privacyEnhanced = true
 
-[params.twitter]
-  card = "summary_large_image"
-  site = "@operant"
-  title = "techblog.operant.io"
-  image = "https://master.d2b7bvt8n689h2.amplifyapp.com/cover.png"
-
 [params.social]
     GitHub = "0xOperant"
     Linkedin = "belldavidr"
