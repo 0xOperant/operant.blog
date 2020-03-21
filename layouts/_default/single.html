@@ -20,7 +20,7 @@
                 </span>
                 {{- end }}
                 | <i class="iconfont icon-timer"></i>
-                {{.ReadingTime }} min {{ i18n "read" }} |
+                {{.ReadingTime }} mins |
                 {{ if and ( $.Param "socialShare" ) (gt (len ($.Param "share")) 0) }}
                 <span>{{ i18n "Share" }}:</span>
                 <span>{{ partial "share-links.html" . }}</span>
