@@ -6,6 +6,7 @@ description: "Sharing my \"Tribe of Hackers Red Team: Tribal Knowledge from the 
 tags: ["tribe of hackers","red team","book","writing"]
 type: page
 featured_image: "/toh/ToH.jpg"
+copyright: false
 images: ["/toh/ToH.jpg"]
 author: "@operant"
 ---

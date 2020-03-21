@@ -5,6 +5,7 @@ draft: false
 description: "About me, and about this site"
 tags: ["about"]
 featured_image: "/images/me/avatar.png"
+copyright: true
 images: ["/images/me/avatar.png"]
 author: "@operant"
 ---

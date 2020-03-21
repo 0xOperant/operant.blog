@@ -14,6 +14,11 @@
           {{- $img := . -}}
           <img src="{{ printf "%s%s" $cdn_url $img }}" class="featured_image">
         {{ end }}
+        {{ with .Params.copyright }}
+        <div style="text-align:right;">
+            <span align="right;">&copy; {{ now.Year }} Dave Bell <a href="/about" rel="author">({{ $.Params.author }})</a></span>
+        </div>
+        {{ end }}
         <!-- end featured_image-->
         <div class="post-meta" style="text-align:right;padding-bottom:2em;">
             {{ i18n "Written" }} {{ i18n "by" }} <a href="{{.Site.BaseURL }}/about" rel="author">{{ if isset .Params "author" }}{{ .Params.author }}{{ else }}{{ .Site.Params.author }}{{ end }}</a> 
