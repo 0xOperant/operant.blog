@@ -4,6 +4,7 @@ date: 2020-01-29T22:24:59-05:00
 draft: false
 description: "About me, and about this site"
 tags: ["about"]
+type: page
 featured_image: "/images/me/avatar.png"
 copyright: true
 images: ["/images/me/avatar.png"]
