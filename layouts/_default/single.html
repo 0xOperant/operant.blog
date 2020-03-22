@@ -37,7 +37,7 @@
 
         {{ with .Params.featured_image }}
           {{- $img := . -}}
-          <img src="{{ printf "%s%s" $cdn_url $img }}" class="featured_image">
+          <img src="{{ printf "%s%s%s" $cdn_url $.RelPermalink $img }}" class="featured_image">
         {{ end }}
         <!-- end featured_image-->
      
