@@ -4,8 +4,8 @@ date: 2020-03-08T19:30:49-04:00
 draft: false
 description: "Sharing my tips and experiences managing remotely"
 tags: ["management","leadership","remote work","tips","home office"]
-featured_image: "/so-youre-going-to-manage-remotely/remote_management.jpg"
-images: ["/so-youre-going-to-manage-remotely/remote_management.jpg"]
+featured_image: "remote_management.jpg"
+images: ["remote_management.jpg"]
 author: "@operant"
 ---
 ## Good Point
