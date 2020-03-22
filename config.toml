@@ -54,6 +54,11 @@ googleAnalytics = "UA-73276509-3"
     url = "/tags/"
     weight = 4
 
+  [[menu.main]]
+    name = Consulting
+    url = "https://www.operant.io"
+    weight = 5
+
 [params]
     since = 2020
     author = "@operant"               # Author's name
