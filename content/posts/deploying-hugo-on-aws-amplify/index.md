@@ -4,8 +4,8 @@ date: 2020-03-01T19:25:10-05:00
 draft: false
 description: "How to deploy Hugo on AWS Amplify"
 tags: ["blog","hugo","aws","amplify","writing","how-to"]
-featured_image: "/images/aws_amplify.jpeg"
-images: ["/images/aws_amplify.jpeg"]
+featured_image: "aws_amplify.jpeg"
+images: ["aws_amplify.jpeg"]
 author: "@operant"
 ---
 ## Let's start writing (again)
