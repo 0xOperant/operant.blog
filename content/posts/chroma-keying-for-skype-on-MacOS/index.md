@@ -4,8 +4,8 @@ date: 2020-02-23T19:14:48-05:00
 draft: false
 description: "How and why I use a chroma key (green screen) in Skype for Business calls"
 tags: ["skype","streaming","how-to","chroma key","MacOS","green screen","wirecast","obs","ecamm live"]
-featured_image: "./greenscreen.jpeg"
-images: ["./greenscreen.jpeg"]
+featured_image: "/greenscreen.jpeg"
+images: ["/greenscreen.jpeg"]
 author: "@operant"
 ---
 {{< copyright >}}
