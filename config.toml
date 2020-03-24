@@ -56,7 +56,7 @@ googleAnalytics = "UA-73276509-3"
 
   [[menu.main]]
     name = "Consulting"
-    url = "https://www.operant.io"
+    url = "https://www.operantsecurity.io"
     weight = 5
 
 [params]
