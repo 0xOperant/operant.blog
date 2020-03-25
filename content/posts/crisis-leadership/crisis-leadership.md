@@ -2,7 +2,7 @@
 title: "Leading in a Crisis"
 date: 2020-03-24T22:28:56-04:00
 draft: true
-description: "Crisis Leadership Strategies that Worked for Me"
+description: "Crisis Leadership Strategies that Have Worked for Me"
 tags: ["leadership","crisis"]
 featured_image: "crisis_leadership.jpg"
 copyright: false
