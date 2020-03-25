@@ -67,6 +67,7 @@
     {{- end -}}
 <!-- utterances -->
   {{- if .Site.Params.utterances.owner}}
+  <p style="text-align:center;"><b><i>Commenting system powered by GitHub OATH API and backed by GitHub Issues.</i></b></p>
     <script src="https://utteranc.es/client.js"
             repo="{{ .Site.Params.utterances.owner }}/{{ .Site.Params.utterances.repo }}"
             issue-term="pathname"
