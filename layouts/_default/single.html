@@ -37,16 +37,16 @@
 
         {{ with .Params.featured_image }}
           {{- $img := . -}}
-          <img src="{{ printf "%s%s%s" $cdn_url $.RelPermalink $img }}" class="featured_image">
+          <img src="{{ printf "%s%s" $cdn_url $img }}" class="featured_image">
         {{ end }}
         <!-- end featured_image-->
      
           {{ $reAltIn := "<img src=\"([^\"]+)\" alt=\"([^\"]+)?\">" }}
-          {{ $reAltOut :=  ( printf "<figure><img src=\"/images/ring.svg\" data-sizes=\"auto\" data-src=\"%s%s$1\" alt=\"$2\" class=\"lazyload\"><figcaption class=\"image-caption\">$2</figcaption></figure>" $cdn_url $.RelPermalink ) }}
+          {{ $reAltOut :=  ( printf "<figure><img src=\"/images/ring.svg\" data-sizes=\"auto\" data-src=\"%s$1\" alt=\"$2\" class=\"lazyload\"><figcaption class=\"image-caption\">$2</figcaption></figure>" $cdn_url ) }}
           {{ $altContent := .Content | replaceRE $reAltIn $reAltOut | safeHTML }}
 
           {{ $reAltTitleIn := "<img src=\"([^\"]+)\" alt=\"([^\"]+)?\" title=\"([^\"]+)?\" />" }}
-          {{ $reAltTitleOut := ( printf "<figure><img src=\"/images/ring.svg\" data-src=\"%s%s$1\" data-sizes=\"auto\" alt=\"$2\" title=\"$3\" class=\"lazyload\"><figcaption class=\"image-caption\">$2</figcaption></figure>" $cdn_url $.RelPermalink ) }}
+          {{ $reAltTitleOut := ( printf "<figure><img src=\"/images/ring.svg\" data-src=\"%s$1\" data-sizes=\"auto\" alt=\"$2\" title=\"$3\" class=\"lazyload\"><figcaption class=\"image-caption\">$2</figcaption></figure>" $cdn_url ) }}
           {{ $finalContent := $altContent | replaceRE $reAltTitleIn $reAltTitleOut | safeHTML }}
 
           {{ $finalContent }}

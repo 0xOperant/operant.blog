@@ -4,8 +4,8 @@ date: 2020-03-24T22:28:56-04:00
 draft: false
 description: "Crisis Leadership Strategies that Have Worked for Me"
 tags: ["leadership","crisis"]
-featured_image: "crisis-leadership.jpg"
-images: ["crisis-leadership.jpg"]
+featured_image: "/images/crisis-leadership.jpg"
+images: ["/images/crisis-leadership.jpg"]
 author: "@operant"
 ---
 ## Let's talk leadership

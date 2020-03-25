@@ -4,8 +4,8 @@ date: 2020-03-03T19:40:19-05:00
 draft: false
 description: "Sharing my tips and experiences working remotely"
 tags: ["tips","remote work","home office"]
-featured_image: "working_remotely.jpg"
-images: ["working_remotely.jpg"]
+featured_image: "/images/working_remotely.jpg"
+images: ["/images/working_remotely.jpg"]
 author: "@operant"
 ---
 After about five years of working remotely full time, I've learned a few things, and would like to share them with the community. As the [COVID-19](https://www.cdc.gov/coronavirus/2019-nCoV/summary.html) virus begins to spread through communities in the US, many [companies are experimenting with keeping a large portion of their workforce home](https://www.cnn.com/2020/03/03/business/jpmorgan-coronavirus-work-home/index.html), at least temporarily. This means that many more people will get the opportunity to try out this "work from home gig," and will likely experience a bit of a learning curve. Some of the things I cover below may just be "tips," but some things may actually even help improve your mental and physical health.
