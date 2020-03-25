@@ -13,9 +13,10 @@ author: "@operant"
 First, let's get this out of the way: I'm not telling anyone how to lead. If there's one thing that I've learned after so many years with Red Teams, it's that no two environments or situations are the same. Leadership isn't easy, and what works in one situation may backfire spectacularly in another. This effect is dramatically amplified during a crisis. I'm writing this as we're in the early stages of grappling with the COVID-19 pandemic here in the US. People all over the world are absolutely in crisis mode, and we are starting to see everyone's true colors, for better or worse.
 
 > [Crisis definition from Merriam-Webster:](https://www.merriam-webster.com/dictionary/crisis)
-> :an unstable or crucial time or state of affairs in which a decisive change is impending
 >
-> _especially_ :one with the distinct possibility of a highly undesirable outcome
+> 3a: an unstable or crucial time or state of affairs in which a decisive change is impending
+>
+> _especially_: one with the distinct possibility of a highly undesirable outcome
 
 During a crisis —any crisis— emotions are running high and information is scarce. People have a natural fear of the unknown, especially when decisions are potentially very consequential.  In the absence of reliable information, people tend to grasp at anything in order to "fill in the blanks" and inform their decision-making…often with disastrous results. The below tweet is [just silly](https://www.popularmechanics.com/military/weapons/a31905004/army-tank-train-transport/), but clearly makes my point.
 
