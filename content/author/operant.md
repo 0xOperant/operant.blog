@@ -1,5 +1,5 @@
 ---
-title: "Dave Bell"
+title: "@operant"
 image: "/images/authors/dave-bell.png"
 email: dbell@operantsecurity.io
 description: "About me, and about this site"
@@ -15,6 +15,7 @@ social:
   - icon : "icon-link"
     link : "https://techblog.operant.io"
 ---
+![Dave Bell](/images/authors/dave-bell.png)
 Hello, I'm Dave. From my LinkedIn bio: I am a proven Red Team leader with extensive experience managing, leading, planning and executing Red Team operations in multiple industries and disciplines across the globe. I have broad experience in both the Public and Private sectors and have been recognized for my expertise in numerous ways--most recently by being featured in the "[Tribe of Hackers: Red Team Edition](https://techblog.operant.io/toh)" book published by Wiley.
 
 {{< twitter_simple 1131923277507637250 >}}

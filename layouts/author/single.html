@@ -1,29 +1,34 @@
+{{ define "content" }}
 {{ $cdn_url := .Scratch.Get "cdn_url" }}
+<div class="post-warp archive">
+    <h2 class="post-title" style="text-align:right;padding-bottom:2em">About the Author: {{ .Title }}</h2>
+    <div class="post-content">
+        <!--featured_image-->
 
-<div class="post-warp">
-    <div class="intro">
-        {{ with .Site.Params.avatar}}
-        {{ $avatar := .}}
-        <div class="avatar">
-            <a href="/posts/"> <img src="{{ (printf "%s%s" $cdn_url $avatar)}}"> </a>
+        {{ $images := findRE "<img src=\"[^\"|\\\"]*\"" .Content -}}
+        {{ if ge (len $images) 1}}
+            {{ $.Scratch.Set "postHasImages" true }}
+        {{ end }}
+
+        {{ with .Params.featured_image }}
+          {{- $img := . -}}
+          <img src="{{ printf "%s%s%s" $cdn_url $.RelPermalink $img }}" class="featured_image">
+        {{ end }}
+        {{ with .Params.copyright }}
+        <div style="text-align:right;">
+            <span align="right;">&copy; {{ now.Year }} Dave Bell <a href="/about" rel="author">({{ $.Params.author }})</a></span>
         </div>
         {{ end }}
-        {{ if or .Params.gravatar.Email (and .Site.Params.gravatar.Email (ne .Params.gravatar.Email false)) }}
-        <div class="avatar">
-            <a href="/posts/"> <img
-                    src="https://www.gravatar.com/avatar/{{ md5 .Site.Params.gravatar.email }}?s=240&d=mp"
-                    alt="gravatar"> </a>
-        </div>
-        {{ end }}
-
-        {{ with .Site.Params.subtitle}}
-        <h2 class="description">
-            {{ . }}
-        </h2>
-        {{ end }}
-
+        <!-- end featured_image-->
+        {{ .Content }}
     </div>
-    {{ range (.Paginate .Pages).Pages }}
+    <ul class="list-inline">
+        {{ range .Params.Social }}
+        <li class="list-inline-item"><a href="{{ .link | safeURL}}"><i class="iconfont icon-{{ $.Param "social.icon" }}"></i></a></li>
+        {{ end }}
+    </ul>
+    <h3 style="text-align:center;">Posts by {{ .Title }}:</h3>
+    {{ range where .Site.RegularPages "Params.author" .Title }}
     <article class="post" itemscope itemscope="" itemtype="http://schema.org/Article">
 
         <header class="post-header">
@@ -45,8 +50,8 @@
                     <time datetime={{.Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }}
                         itemprop="datePublished">{{ .Date.Format (.Site.Params.dateFormatToUse | default "2 January 2006") }}</time>
                 </span>
-                in
                 {{ with .Params.categories -}}
+                in
                 <i class="iconfont icon-folder"></i>
                 <span class="post-category">
                     {{ range . }}
@@ -69,6 +74,20 @@
         </div>
     </article>
     {{ end }}
+    <div class="post-copyright" style="text-align:center;">
+        
+        <p class="copyright-item">
+            {{ if and ( $.Param "socialShare" ) (gt (len ($.Param "share")) 0) }}
+            <span>{{ i18n "Share" }}:</span>
+            <span>{{ partial "share-links.html" . }}</span>
+            {{ end }}
+        </p>
 
-    {{ partial "paginator.html" . }}
+        {{ with .Site.Params.license }} 
+        <p class="copyright-item">
+            {{ . | safeHTML}}
+        </p>
+        {{ end }}
+
 </div>
+{{end }}
