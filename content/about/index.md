@@ -12,7 +12,7 @@ author: "@operant"
 ---
 ## A little about myself
 
-Hello, I'm Dave. From my LinkedIn bio: I am a proven Red Team leader with extensive experience managing, leading, planning and executing Red Team operations in multiple industries and disciplines across the globe. I have broad experience in both the Public and Private sectors and have been recognized for my expertise in numerous ways--most recently by being featured in the "[Tribe of Hackers: Red Team Edition](/toh)" book published by Wiley.
+Hello, I'm Dave. From my LinkedIn bio: I am a proven senior cyber security leader with extensive experience managing, leading, planning and executing Red Team and other cyber operations in multiple industries and disciplines across the globe. I have broad experience in both the Public and Private sectors and have been recognized for my expertise in numerous ways--most recently by being featured in the "[Tribe of Hackers: Red Team Edition](/toh)" book published by Wiley.
 
 ## A little about this site
 
