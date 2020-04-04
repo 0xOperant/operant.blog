@@ -6,13 +6,13 @@ description: "About me, and about this site"
 images: ["/images/authors/dave-bell.png"]
 draft: false
 social:
-  - icon : "icon-twitter"
+  - icon : "iconfont icon-twitter"
     link : "https://twitter.com/operant"
-  - icon : "icon-linkedin"
+  - icon : "iconfont icon-linkedin"
     link : "https://linkedin.com/in/belldavidr"
-  - icon : "icon-github"
+  - icon : "iconfont icon-github"
     link : "https://github.com/0xOperant"
-  - icon : "icon-link"
+  - icon : "fas fa-link fa-2x"
     link : "https://techblog.operant.io"
 ---
 ![Dave Bell](/images/authors/dave-bell.png)

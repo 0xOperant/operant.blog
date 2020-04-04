@@ -22,12 +22,12 @@
         <!-- end featured_image-->
         {{ .Content }}
     </div>
-    <ul class="list-inline">
-        {{ range .Params.Social }}
-        <li class="list-inline-item"><a href="{{ .link | safeURL}}"><i class="iconfont icon-{{ $.Param "social.icon" }}"></i></a></li>
+    <div class="social-links" style="text-align:center;">
+        {{ range $.Params.social }}
+        <a href="{{ .link | safeURL}}" rel="me noopener noreffer" target="_blank"><i class="{{ .icon }}"></i></a>
         {{ end }}
-    </ul>
-    <h3 style="text-align:center;">Posts by {{ .Title }}:</h3>
+    </div>
+    <h3 class="post-title" style="text-align:center;">More posts by {{ .Title }}:</h3>
     {{ range where .Site.RegularPages "Params.author" .Title }}
     <article class="post" itemscope itemscope="" itemtype="http://schema.org/Article">
 
