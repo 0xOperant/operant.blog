@@ -12,7 +12,7 @@
 
         {{ with .Params.featured_image }}
           {{- $img := . -}}
-          <img src="{{ printf "%s%s%s" $cdn_url $.RelPermalink $img }}" class="featured_image">
+          <img src="{{ printf "%s%s" $cdn_url $img }}" class="featured_image" style="margin-left:auto !important;margin-right:auto !important;width:250px !important;">
         {{ end }}
         {{ with .Params.copyright }}
         <div style="text-align:right;">
@@ -22,12 +22,13 @@
         <!-- end featured_image-->
         {{ .Content }}
     </div>
-    <div class="social-links" style="text-align:center;">
+    <div class="social-links" style="text-align:center;padding-bottom:2em;padding-top:2em">
         {{ range $.Params.social }}
         <a href="{{ .link | safeURL}}" rel="me noopener noreffer" target="_blank"><i class="{{ .icon }}"></i></a>
-        {{ end }}
+        {{ end }}<br>
+        Follow {{ .Title }}!
     </div>
-    <h3 class="post-title" style="text-align:center;">More posts by {{ .Title }}:</h3>
+    <h3 style="text-align:center;padding-bottom:2em">Read more from {{ .Title }}:</h3>
     {{ range where .Site.RegularPages "Params.author" .Title }}
     <article class="post" itemscope itemscope="" itemtype="http://schema.org/Article">
 

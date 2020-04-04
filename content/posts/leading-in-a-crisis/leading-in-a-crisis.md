@@ -6,7 +6,7 @@ description: "Crisis Leadership Strategies that Have Worked for Me"
 tags: ["leadership","crisis"]
 featured_image: "/images/crisis-leadership.jpg"
 images: ["/images/crisis-leadership.jpg"]
-author: "@operant"
+author: "Dave Bell"
 ---
 ## Let's talk leadership
 

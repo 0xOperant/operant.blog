@@ -6,7 +6,7 @@ description: "Sharing my tips and experiences managing remotely"
 tags: ["management","leadership","remote work","tips","home office"]
 featured_image: "/images/remote_management.jpg"
 images: ["/images/remote_management.jpg"]
-author: "@operant"
+author: "Dave Bell"
 ---
 ## Good Point
 

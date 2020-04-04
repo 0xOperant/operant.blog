@@ -6,7 +6,7 @@ description: "don't use the bloated default image!"
 tags: ["hugo","docker","aws","amplify","iam","ecr"]
 featured_image: "/images/hugo-docker-aws.png"
 images: ["/images/hugo-docker-aws.png"]
-author: "@operant"
+author: "Dave Bell"
 ---
 ## Bloated Whale
 

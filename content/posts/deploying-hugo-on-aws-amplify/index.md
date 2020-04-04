@@ -6,7 +6,7 @@ description: "How to deploy Hugo on AWS Amplify"
 tags: ["blog","hugo","aws","amplify","writing","how-to"]
 featured_image: "/images/aws_amplify.jpeg"
 images: ["/images/aws_amplify.jpeg"]
-author: "@operant"
+author: "Dave Bell"
 ---
 ## Let's start writing (again)
 
