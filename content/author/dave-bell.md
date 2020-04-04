@@ -3,6 +3,8 @@ title: "Dave Bell"
 featured_image: "/images/authors/dave-bell.png"
 description: "About the author"
 images: ["/images/authors/dave-bell.png"]
+author: "Dave Bell"
+copyright: true
 draft: false
 social:
   - icon : "iconfont icon-twitter"

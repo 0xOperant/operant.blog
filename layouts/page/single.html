@@ -12,11 +12,11 @@
 
         {{ with .Params.featured_image }}
           {{- $img := . -}}
-          <img src="{{ printf "%s%s" $cdn_url $img }}" class="featured_image">
+          <img src="{{ printf "%s%s" $cdn_url $img }}" class="featured_image" style="margin-left:auto !important;margin-right:auto !important;width:auto !important;">
         {{ end }}
         {{ with .Params.copyright }}
         <div style="text-align:right;">
-            <span align="right;">&copy; {{ now.Year }} Dave Bell <a href="/about/" rel="author">(@operant)</a></span>
+            <span align="right;" style="font-size:small">Image &copy; {{ now.Year }} Dave Bell</span>
         </div>
         {{ end }}
         <!-- end featured_image-->
