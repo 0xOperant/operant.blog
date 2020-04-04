@@ -5,9 +5,9 @@ draft: false
 description: "About me, and about this site"
 tags: ["about"]
 type: page
-featured_image: "avatar.png"
+featured_image: "/images/avatar.png"
 copyright: true
-images: ["avatar.png"]
+images: ["/images/avatar.png"]
 author: "@operant"
 ---
 ## A little about myself
