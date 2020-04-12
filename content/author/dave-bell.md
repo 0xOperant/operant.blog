@@ -11,6 +11,8 @@ social:
     link : "https://twitter.com/operant"
   - icon : "iconfont icon-linkedin"
     link : "https://linkedin.com/in/belldavidr"
+  - icon : "iconfont icon-medium"
+    link : "https://medium.com/@operant/"
   - icon : "iconfont icon-github"
     link : "https://github.com/0xOperant"
   - icon : "iconfont icon-keybase"
