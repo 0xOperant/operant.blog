@@ -6,6 +6,7 @@ images: ["/images/authors/dave-bell.png"]
 author: "Dave Bell"
 copyright: true
 draft: false
+type: author
 social:
   - icon : "iconfont icon-twitter"
     link : "https://twitter.com/operant"

@@ -1,0 +1,45 @@
+{{ define "content" }}
+{{ $cdn_url := .Scratch.Get "cdn_url" }}
+<div class="post-warp archive">
+    <h1 class="post-title" style="text-align:right;padding-bottom:2em">About This Site</h1>
+    <div class="post-content">
+        <!--featured_image-->
+
+        {{ $images := findRE "<img src=\"[^\"|\\\"]*\"" .Content -}}
+        {{ if ge (len $images) 1}}
+            {{ $.Scratch.Set "postHasImages" true }}
+        {{ end }}
+
+        {{ with .Params.featured_image }}
+          {{- $img := . -}}
+          <img src="{{ printf "%s%s" $cdn_url $img }}" class="featured_image" style="margin-left:auto !important;margin-right:auto !important;width:auto !important;">
+        {{ end }}
+        {{ with .Params.copyright }}
+        <div style="text-align:right;">
+            <span align="right;" style="font-size:small">Image &copy; {{ now.Year }} Dave Bell</span>
+        </div>
+        {{ end }}
+        <!-- end featured_image-->
+        {{ .Content }}
+    </div>
+    <div class="social-links" style="text-align:center;padding-bottom:2em;padding-top:2em">
+        {{ partial "social.html" . }}
+    
+      </div>
+    <div class="post-copyright" style="text-align:center;">
+        
+        <p class="copyright-item">
+            {{ if and ( $.Param "socialShare" ) (gt (len ($.Param "share")) 0) }}
+            <span>{{ i18n "Share" }}:</span>
+            <span>{{ partial "share-links.html" . }}</span>
+            {{ end }}
+        </p>
+
+        {{ with .Site.Params.license }} 
+        <p class="copyright-item">
+            {{ . | safeHTML}}
+        </p>
+        {{ end }}
+
+</div>
+{{end }}
