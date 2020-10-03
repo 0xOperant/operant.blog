@@ -1,11 +1,11 @@
-baseURL = "https://techblog.operant.io"
+baseURL = "https://operant.blog/"
 languageCode = "en"
 defaultContentLanguage = "en"
 theme = "KeepIt"
 
 [Languages]
   [Languages.en]
-    title = "techblog.operant.io"
+    title = "operant.blog"
     weight = 0
 
 paginate = 12
@@ -63,7 +63,7 @@ googleAnalytics = "UA-73276509-3"
     since = 2020
     author = "@operant"               # Author's name
     subtitle = "Hi, I'm Dave. Follow me on the platforms below, and check out my latest posts."       # Subtitle
-    cdn_url = "https://master.d2b7bvt8n689h2.amplifyapp.com"           # Base CDN URL
+    cdn_url = "https://operant.blog"           # Base CDN URL
     home_mode = "" # post or other
     git_url = "https://github.com/0xOperant/techblog.operant.io"
 
@@ -76,9 +76,9 @@ googleAnalytics = "UA-73276509-3"
     avatar = "/images/me/avatar.png" #comment it to use gravatar
     socialShare = true
 
-    description = "Sharing my experiences as a Red Team leader" # site description
+    description = "Sharing my experiences as a Red Team leader and infosec consultant" # site description
     keywords = "tech, red team, cyber, infosec, security" # site keywords
-    images = ["https://master.d2b7bvt8n689h2.amplifyapp.com/cover.png"]
+    images = ["https://operant.blog/blog_cover.png"]
 
     license= 'Licensed under <a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>, except where marked (with &copy;). Some rights reserved.'
 
@@ -196,7 +196,7 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
     height = 40
 
   [params.image]
-    url = "cover.png"
+    url = "blog_cover.png"
     width = 800
     height = 600
 
