@@ -1,4 +1,4 @@
-name: Deploy
+name: Deploy Hugo to Cloudflare Workers
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -45,3 +45,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           environment: ${{ github.event.inputs.environment }}
+          wranglerVersion: 'latest'
