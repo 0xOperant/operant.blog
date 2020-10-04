@@ -1,5 +1,5 @@
 ---
-title: "Career Development"
+title: "Infosec Career Development"
 date: 2020-10-04T13:33:24-04:00
 draft: false
 description: "Some Advice for Career-Related Decisions"
@@ -21,7 +21,7 @@ This may sound like a basic question, but it's surprisingly difficult for many p
 
 Many of the conversations I’ve had recently revolve around making major decisions in one’s career. This may be “breaking into the industry,” changing employers, changing from Red to Blue, or even leaving infosec altogether. While I love these chats, I often wonder whether or not I’m actually helping people, and here’s why: I’m me! In all seriousness, I sometimes haven’t faced the challenges or been in the situations we’re discussing, so I just listen carefully, try to understand all sides and angles, and ask gently probing questions. Do I have an opinion on the matter at hand? Probably. Is it what this person is looking for, or needs to hear? Not always. The fact of the matter is that what worked for me in my career, probably won’t work for many other people. My origin story is my own, just like _your story is your own_. Most people are more than happy to share what worked for them in their past and proudly proclaim that as “The Right Way To Do It.” That’s crap. In fact this kind of advice can often confuse people even more.
 
-I was quoted in “Tribe of Hackers: Red Team” as saying “There’s no right way to become a Red Team member.” While I still firmly believe that, my perspective has widened to include much more of the infosec industry. This industry is so large, and changes so fast, that I now believe one can “choose their own adventure,” so to speak. Are you a defender looking to switch to offense? Do it! You’ll love it and bring valuable skills and perspective to the Red side. Are you a devops wizard tired of seeing security people slow down operations? Show them how it’s done!  I’m not saying this kind of change is going to be as easy as snapping your fingers, but if you _really_ want to try something new, I’m confident you will find a way. As you blaze your own trail, however, you will undoubtedly need a little help. But where to get this help?
+I was quoted in “[Tribe of Hackers: Red Team](/toh)” as saying “There’s no right way to become a Red Team member.” While I still firmly believe that, my perspective has widened to include much more of the infosec industry. This industry is so large, and changes so fast, that I now believe one can “choose their own adventure,” so to speak. Are you a defender looking to switch to offense? Do it! You’ll love it and bring valuable skills and perspective to the Red side. Are you a devops wizard tired of seeing security people slow down operations? Show them how it’s done!  I’m not saying this kind of change is going to be as easy as snapping your fingers, but if you _really_ want to try something new, I’m confident you will find a way. As you blaze your own trail, however, you will undoubtedly need a little help. But where to get this help?
 
 ## It’s the Network
 
