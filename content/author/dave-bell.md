@@ -16,14 +16,6 @@ social:
     link : "https://medium.com/@operant/"
   - icon : "iconfont icon-github"
     link : "https://github.com/0xOperant"
-  - icon : "iconfont icon-keybase"
-    link : "https://keybase.io/belldavidr"
-  - icon : "iconfont icon-reddit"
-    link : "https://www.reddit.com/user/0xOperant"
-  - icon : "iconfont icon-bitbucket"
-    link : "https://bitbucket.org/belldavidr"
-  - icon : "iconfont icon-mastodon"
-    link : "https://mastodon.social/@operant"
 ---
 Hello, I'm Dave. From my LinkedIn bio: I am a proven senior cyber security leader with extensive experience leading, managing, planning and executing Red Team and other cyber operations in multiple industries and disciplines across the globe. I have broad experience in both the Public and Private sectors and have been recognized for my expertise in numerous ways--most recently by being featured in the "[Tribe of Hackers: Red Team Edition](/toh/)" book published by Wiley.
 

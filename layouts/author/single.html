@@ -23,10 +23,12 @@
         {{ .Content }}
     </div>
     <div class="social-links" style="text-align:center;padding-bottom:2em;padding-top:2em">
-        {{ range $.Params.social }}
-        <a href="{{ .link | safeURL}}" rel="me noopener noreffer" target="_blank"><i class="{{ .icon }}"></i></a>
-        {{ end }}<br>
-        Follow {{ .Title }}!
+        {{/*  {{ range .Params.social }}  */}}
+        {{/*  <a href="{{ .link | safeURL}}" rel="me noopener noreffer" target="_blank"><i class="{{ .icon }}"></i></a>  */}}
+        {{/*  {{ end }}<br>  */}}
+        Follow {{ .Title }}!<br>
+        {{ partial "social.html" . }}
+        
     </div>
     <h3 style="text-align:center;padding-bottom:2em">Read more from {{ .Title }}:</h3>
     {{ range where .Site.RegularPages "Params.author" .Title }}

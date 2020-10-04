@@ -35,37 +35,37 @@ googleAnalytics = "UA-73276509-3"
 
 [menu]
   [[menu.main]]
-    name = "Blog"
+    name = "Posts"
     url = "/posts/"
     weight = 1
 
   [[menu.main]]
     name = "About"
     url = "/about"
-    weight = 2
+    weight = 3
 
   [[menu.main]]
     name = "Tribe of Hackers"
     url = "/toh"
-    weight = 3
+    weight = 4
 
   [[menu.main]]
     name = "Tags"
     url = "/tags/"
-    weight = 4
+    weight = 2
 
-  [[menu.main]]
-    name = "Consulting"
-    url = "https://www.operantsecurity.io"
-    weight = 5
+#  [[menu.main]]
+#    name = "Consulting"
+#    url = "https://www.operantsecurity.io"
+#    weight = 5
 
 [params]
     since = 2020
-    author = "@operant"               # Author's name
+    author = "Dave Bell"               # Author's name
     subtitle = "Hi, I'm Dave. Follow me on the platforms below, and check out my latest posts."       # Subtitle
     cdn_url = "https://operant.blog"           # Base CDN URL
-    home_mode = "" # post or other
-    git_url = "https://github.com/0xOperant/techblog.operant.io"
+    home_mode = "profile" # post or other
+    git_url = "https://github.com/0xOperant/operant.blog"
 
     google_verification = ""
     bing_verification = ""
@@ -108,8 +108,8 @@ googleAnalytics = "UA-73276509-3"
     GitHub = "0xOperant"
     Linkedin = "belldavidr"
     Twitter = "operant"
-    #Instagram = "xxxx"
-    #Email   = "xxxx"
+    Instagram = "operant.ig"
+    Email   = "blog@operant.io"
     #Facebook = "xxxx"
     #Telegram = "xxxx"
     Medium = "@operant"
@@ -123,7 +123,7 @@ googleAnalytics = "UA-73276509-3"
     #Pinterest = "xxxx"
     Reddit = "0xOperant"
     #Codepen = "xxxx"
-    Bitbucket = "belldavidr"
+    #Bitbucket = "belldavidr"
     #Stackoverflow = "xxxxx"
     #Weibo = "xxxx"
     #Odnoklassniki = "xxxx"
@@ -137,10 +137,10 @@ googleAnalytics = "UA-73276509-3"
     #Paypal = "xxxx"
     #Fivehundredpx = "xxxx"
     #Mix = "xxxx"
-    #Goodreads = "xxxx"
+    Goodreads = "operant"
     #Lastfm = "xxxx"
     #Foursquare = "xxxx"
-    #Hackernews = "0xoperant"
+    Hackernews = "0xoperant"
     #Kickstarter = "xxxx"
     #Patreon = "xxxx"
     #Steam = "xxxx"
@@ -200,7 +200,7 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
     width = 800
     height = 600
 
-[params.utterances]                  # https://utteranc.es/
-    owner = "0xOperant"              # Your GitHub ID
-    repo  = "techblog.operant.io"    # The repo to store comments
-    theme = "github-light"
+# [params.utterances]                  # https://utteranc.es/
+#     owner = "0xOperant"              # Your GitHub ID
+#     repo  = "operant.blog"           # The repo to store comments
+#     theme = "github-light"           # theme

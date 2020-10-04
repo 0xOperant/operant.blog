@@ -22,8 +22,8 @@ The main motivation for this site is to document and share things as I learn the
 
 ## How to contact me
 
-Between working full time leading the Red Team at GE, [consulting](https://www.operantsecurity.io), [blogging](/posts/), [writing](/toh/), and other [side projects](http://cloudscience.io), there aren't many hours left in my day. However, I do love to help people and enjoy working collaboratively on interesting projects! I'm also open to speaking, interviews, and guest writing with interesting people. If you have something you think would be fun to work on, definitely reach out. I may not be able to help, but I probably know someone that can.
+Between working full time as a Partner at [Blackthorne Consulting](https://www.blackthorneconsulting.com), [blogging](/posts/), [writing](/toh/), and other [side projects](https://www.operantsecurity.io), there aren't many hours left in my day. However, I do love to help people and enjoy working collaboratively on interesting projects! I'm also open to speaking, interviews, and guest writing with interesting people. If you have something you think would be fun to work on, definitely reach out. I may not be able to help, but I probably know someone that can.
 
 For speaking, interviews, guest writing, or other projects, please [email me directly](mailto:collab@operant.io). {{< email >}}
 
-If you're just looking to connect socially, I am usually most active on [twitter](https://twitter.com/operant), and my DMs are open. Links to my most active social media profiles are below, as well. I look forward to hearing from you!
+If you're just looking to connect socially, I am usually most active on [twitter](https://twitter.com/operant), and my DMs are open. Links to my other social media profiles are below, as well. I look forward to hearing from you!
