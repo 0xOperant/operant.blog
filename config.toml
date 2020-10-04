@@ -64,11 +64,7 @@ googleAnalytics = "UA-73276509-3"
     author = "Dave Bell"               # Author's name
     subtitle = "Hi, I'm Dave. Follow me on the platforms below, and check out my latest posts."       # Subtitle
     cdn_url = "https://operant.blog"           # Base CDN URL
-<<<<<<< HEAD
     home_mode = "profile" # post or other
-=======
-    home_mode = "" # post or other
->>>>>>> 20af86cd0c70b8bea504da8616ff652747567e73
     git_url = "https://github.com/0xOperant/operant.blog"
 
     google_verification = ""
@@ -204,14 +200,7 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
     width = 800
     height = 600
 
-<<<<<<< HEAD
 # [params.utterances]                  # https://utteranc.es/
 #     owner = "0xOperant"              # Your GitHub ID
 #     repo  = "operant.blog"           # The repo to store comments
 #     theme = "github-light"           # theme
-=======
-[params.utterances]                  # https://utteranc.es/
-    owner = "0xOperant"              # Your GitHub ID
-    repo  = "operant.blog"    # The repo to store comments
-    theme = "github-light"
->>>>>>> 20af86cd0c70b8bea504da8616ff652747567e73
