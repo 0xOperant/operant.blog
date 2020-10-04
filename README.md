@@ -1,3 +1,5 @@
+![Deploy Hugo to Cloudflare Workers](https://github.com/0xOperant/operant.blog/workflows/Deploy%20Hugo%20to%20Cloudflare%20Workers/badge.svg?branch=master&event=push)
+
 KeepIt Hugo Theme
 ========================
 
