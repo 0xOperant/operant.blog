@@ -65,7 +65,7 @@ googleAnalytics = "UA-73276509-3"
     subtitle = "Hi, I'm Dave. Follow me on the platforms below, and check out my latest posts."       # Subtitle
     cdn_url = "https://operant.blog"           # Base CDN URL
     home_mode = "" # post or other
-    git_url = "https://github.com/0xOperant/techblog.operant.io"
+    git_url = "https://github.com/0xOperant/operant.blog"
 
     google_verification = ""
     bing_verification = ""
@@ -202,5 +202,5 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
 
 [params.utterances]                  # https://utteranc.es/
     owner = "0xOperant"              # Your GitHub ID
-    repo  = "techblog.operant.io"    # The repo to store comments
+    repo  = "operant.blog"    # The repo to store comments
     theme = "github-light"
