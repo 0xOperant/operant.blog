@@ -74,13 +74,13 @@
             
             <p class="copyright-item">
                 <span>{{ "Commit Hash" }}:</span>
-                {{/*  <span><a href="{{ .Site.Params.git_url }}/commit/{{ .GitInfo.Hash }}">{{ .GitInfo.AbbreviatedHash }}</a></span>  */}}
+                <span><a href="{{ .Site.Params.git_url }}/commit/{{ .GitInfo.Hash }}">{{ .GitInfo.AbbreviatedHash }}</a></span>
 
             </p>
 
             <p class="copyright-item">
                 <span>{{ "Edited" }}:</span>
-                {{/*  <span>{{ .GitInfo.AuthorDate.Format "02 Jan 06 15:04 MST" }}</span>  */}}
+                <span>{{ .GitInfo.AuthorDate.Format "02 Jan 06 15:04 MST" }}</span>
 
             </p>
 
