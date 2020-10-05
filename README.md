@@ -2,7 +2,7 @@
 
 # operant.blog site based on Hugo and KeepIt theme
 
-![operant.blog](https://github.com/0xOperant/operant.blog/blob/custom_readme/static/images/screenshot.png)
+![operant.blog](https://github.com/0xOperant/operant.blog/blob/master/static/images/screenshot.png)
 
 
 ## License
