@@ -1,9 +1,7 @@
 name = "operant_blog-1"
 type = "webpack"
-account_id = "0819ffbe7d307af9800c06712f28ed0a"
 workers_dev = false
 route = "operant.blog/*"
-zone_id = "1d7b5166279dcca81af83e0f6e10f039"
 
 [site]
 bucket = "./public"
