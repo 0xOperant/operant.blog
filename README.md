@@ -1,3 +1,4 @@
+[![CodeQL](https://github.com/0xOperant/operant.blog/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/0xOperant/operant.blog/actions/workflows/codeql-analysis.yml)
 ![Deploy Hugo to Cloudflare Workers](https://github.com/0xOperant/operant.blog/workflows/Deploy%20Hugo%20to%20Cloudflare%20Workers/badge.svg?branch=master&event=push)
 
 # operant.blog site based on Hugo and KeepIt theme
