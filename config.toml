@@ -2,6 +2,8 @@ baseURL = "https://operant.blog/"
 languageCode = "en"
 defaultContentLanguage = "en"
 theme = "KeepIt"
+ignoreFiles = ['themes/KeepIt/content/']
+ignoreLogs = ['warning-goldmark-raw-html']
 
 [Languages]
   [Languages.en]
@@ -61,7 +63,6 @@ googleAnalytics = "UA-73276509-3"
 
 [params]
     since = 2020
-    author = "Dave Bell"               # Author's name
     subtitle = "Hi, I'm Dave. Follow me on the platforms below, and check out my latest posts."       # Subtitle
     cdn_url = "https://operant.blog"           # Base CDN URL
     home_mode = "profile" # post or other
@@ -179,8 +180,11 @@ Tumblr = true
 # Used only for Seo schema
 copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
 
-[author]
-  name = "@operant"
+[params.author]
+  name = "Dave Bell"
+  email = "blog@operant.io"
+  link = "/about"
+  handle = "@operant"
 
   [params.publisher]
     name = "@operant"
