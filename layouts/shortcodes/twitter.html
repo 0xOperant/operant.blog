@@ -1,26 +1,31 @@
-{{- $pc := .Page.Site.Config.Privacy.Twitter -}}
-{{- if not $pc.Disable -}}
-{{- if $pc.Simple -}}
-{{ template "_internal/shortcodes/twitter_simple.html" . }}
-{{- else -}}
-{{- $url := printf "https://api.twitter.com/1/statuses/oembed.json?id=%v&dnt=%t" (index .Params 0) $pc.EnableDNT -}}
-{{- $json := getJSON $url -}}
+{{- /* Static Twitter/X embed: avoids removed `getJSON` and the now-defunct oEmbed API. */ -}}
+{{- $id := .Get 0 -}}
+{{- $user := .Get 1 | default "twitter" -}}
 {{ template "__h_twitter_css" $ }}
-{{ $json.html | safeHTML }}
-{{- end -}}
-{{- end -}}
+<blockquote class="twitter-tweet">
+  <a href="https://twitter.com/{{ $user }}/status/{{ $id }}">View Tweet on X</a>
+</blockquote>
 
 {{ define "__h_twitter_css" }}
 {{ if not (.Page.Scratch.Get "__h_twitter_css") }}
-{{/* Only include once */}}
 {{  .Page.Scratch.Set "__h_twitter_css" true }}
 <style type="text/css">
   .twitter-tweet {
-  font: 14px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-  margin-left: auto;
-  margin-right: auto;
-  color: #555;
-}
+    font: 14px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    border-left: 4px solid #2b7bb9;
+    padding-left: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    color: #555;
+  }
+  .twitter-tweet a {
+    color: #2b7bb9;
+    text-decoration: none;
+  }
+  .twitter-tweet a:hover,
+  .twitter-tweet a:focus {
+    text-decoration: underline;
+  }
 </style>
 {{ end }}
 {{ end }}
