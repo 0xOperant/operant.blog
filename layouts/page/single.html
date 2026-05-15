@@ -21,7 +21,7 @@
         {{ end }}
         <!-- end featured_image-->
         <div class="post-meta" style="text-align:right;padding-bottom:2em;">
-            {{ i18n "Written" }} {{ i18n "by" }} <a href="{{ `author/` | relLangURL }}{{ .Params.Author | urlize }}" rel="author">{{ if isset .Params "author" }}{{ .Params.author }}{{ else }}{{ .Site.Params.author }}{{ end }}</a> 
+            {{ i18n "Written" }} {{ i18n "by" }} <a href="{{ `author/` | relLangURL }}{{ .Params.Author | urlize }}" rel="author">{{ if isset .Params "author" }}{{ .Params.author }}{{ else }}{{ .Site.Params.Author.name }}{{ end }}</a> 
                 <span class="post-time">
                     {{ i18n "on" }} <time datetime={{.Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }} >{{ .Date.Format (.Site.Params.dateFormatToUse | default "2 January 2006") }}</time>
                 </span>
